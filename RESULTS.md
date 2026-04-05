@@ -25,37 +25,21 @@ SELECT name, specialization FROM doctors
 Here’s a quick rundown of every doctor in the system and their respective specialties:
 
 | Doctor | Specialization |
-
-|-----------------------|----------------|
-
+|--------|----------------|
 | Dr. Amit Smith | Pediatrics |
-
 | Dr. Jane Singh | Cardiology |
-
 | Dr. Emma Patel | Pediatrics |
-
 | Dr. David Jones | Pediatrics |
-
 | Dr. David Smith | Dermatology |
-
 | Dr. Emma Jones | General |
-
 | Dr. Rahul Williams | Dermatology |
-
 | Dr. David Singh | Orthopedics |
-
 | Dr. Jane Brown | Orthopedics |
-
 | Dr. John Gupta | Dermatology |
-
 | Dr. Emma Patel | Cardiology |
-
 | Dr. Rahul Smith | Pediatrics |
-
 | Dr. David Doe | Cardiology |
-
 | Dr. Sarah Singh | Dermatology |
-
 | Dr. Rahul Smith | General |
 
 If you need further breakdowns (e.g., counts by specialization) or visualizations, just let me know!
