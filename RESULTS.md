@@ -721,7 +721,35 @@ Now creating a visualization to show these results clearly. The chart will help 
 - **Status**: ✅ Passed
 - **Generated SQL**:
 ```sql
-
+SELECT strftime('%Y-%m', registered_date) AS month, COUNT(*) AS registrations FROM patients GROUP BY month ORDER BY month;
 ```
-- **Result Summary**: No data found for your query.
+- **Result Summary**:
+
+Patient Registration Trend (by month)
+
+| Month (YYYY‑MM) | Registrations |
+|-----------------|---------------|
+| 2025‑04 | 14 |
+| 2025‑05 | 16 |
+| 2025‑06 | 18 |
+| 2025‑07 | 15 |
+| 2025‑08 | 15 |
+| 2025‑09 | 11 |
+| 2025‑10 | 20 |
+| 2025‑11 | 19 |
+| 2025‑12 | 19 |
+| 2026‑01 | 17 |
+| 2026‑02 | 17 |
+| 2026‑03 | 17 |
+| 2026‑04 | 2 |
+
+A line chart visualizing this data has been generated (titled “Patient Registrations per Month”).
+
+Key observations
+
+* Registrations peaked in October 2025 with 20 new patients.
+* The month of September 2025 saw the lowest activity (11 registrations).
+* After a strong end‑of‑year period (Nov‑Dec 2025, each with ~19 registrations), the numbers remained fairly steady around 17‑18 per month in early 2026, before dropping sharply in April 2026 (only 2 registrations so far).
+
+These trends can help you spot seasonal patterns or evaluate the impact of any outreach initiatives you may have run during the year.
 
