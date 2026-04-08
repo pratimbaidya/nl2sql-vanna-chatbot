@@ -694,12 +694,31 @@ A visual overview of these overdue invoices is available in the accompanying cha
 - **Status**: ✅ Passed
 - **Generated SQL**:
 ```sql
-
+SELECT d.department, SUM(i.paid_amount) AS total_revenue FROM invoices i JOIN appointments a ON i.patient_id = a.patient_id JOIN doctors d ON a.doctor_id = d.id GROUP BY d.department ORDER BY total_revenue DESC;
 ```
-- **Result Summary**: No data found for your query.
+- **Result Summary**:
+
+The revenue comparison across departments has been successfully calculated and saved to a CSV file. Here's a summary of the results:
+
+Top 5 Departments by Revenue:
+
+1. Dermatology Dept: $284,854.43
+
+2. Pediatrics Dept: $248,082.55
+
+3. Cardiology Dept: $183,631.45
+
+4. Orthopedics Dept: $158,898.43
+
+5. General Dept: $104,092.99
+
+Now creating a visualization to show these results clearly. The chart will help compare the revenue distribution visually.
+
+*My Comment*: At first the Agent was unable to establish the connection between tables, So it needed some guiding. Once it understood the relationship, it did the job perfectly.
+
 
 ### 20. Show patient registration trend by month
-- **Status**: ❌ Failed
+- **Status**: ✅ Passed
 - **Generated SQL**:
 ```sql
 
