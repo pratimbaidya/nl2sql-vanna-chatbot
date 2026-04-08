@@ -42,7 +42,7 @@ def get_vanna_agent():
         raise ValueError("Missing GROQ_API_KEY")
 
     llm = OpenAILlmService(
-        model="openai/gpt-oss-20b",
+        model="openai/gpt-oss-120b",
         api_key=groq_api_key,
         base_url="https://api.groq.com/openai/v1"
     )
